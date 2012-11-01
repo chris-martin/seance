@@ -1,0 +1,391 @@
+.glass-panel {
+	position: relative;
+	width: 320px;
+	margin: 0;
+	padding: 0;
+	top: 0px;
+	left: 0px;
+}
+
+.glass-panel.half-panel_0 {
+	margin: 0; 		
+}
+
+.glass-panel.half-panel_1 {
+	margin: 0; 		
+}
+
+.glass-panel.half-panel_0 .keypad,
+.glass-panel.half-panel_1 .keypad {
+	height: 49px;
+}
+
+.glass-panel .input-field {
+	width: 320px;
+	height: 53px;
+	position: absolute;
+	top: -50px;
+	left: 0;
+	vertical-align: middle;
+	margin: 0;
+	z-index: 5;
+	padding: 0px;
+}
+
+.contact-name {        
+font: 11px/17px; 
+ width: 50%; 
+	text-align: center;
+	color: #000;
+}
+
+/* input-field */
+
+.input-field input[type=text],
+.input-field .text-input {
+	border: none;
+	margin: 0;
+	outline: none;
+	background: none;
+	color: #000;
+	line-height: 49px;
+	height: 53px;
+	font-size: 20px;
+	width: 220px;
+	padding: 0 50px 0 50px;
+	text-align: center;
+	/* FIXME: commented out due to segfault -webkit-user-select: none; */
+	-webkit-user-drag: none;
+}
+
+.input-field .text-input.add-glass {
+	height: 50px;
+	width: auto;
+	border-width: 0 25px 0 25px;
+	-webkit-border-image: url(../images/dialpad/phone-menu-button.png) 0 25 150 25 repeat repeat;
+}
+.input-field .text-input.add-glass.selected {
+  -webkit-border-image: url(../images/dialpad/phone-menu-button.png) 50 25 100 25 repeat repeat;
+}
+
+.text-input.small1 { font-size: 28px; }
+.text-input.small2 { font-size: 24px; }
+.text-input.small3 { font-size: 22px; }
+.text-input.small4 { font-size: 20px; }
+.text-input.small5 { font-size: 16px; }
+
+.text-input.hinttext { 
+	color: #bcceb3;
+	font-size: 16px;
+	padding: 0 60px 0 40px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.backspace {
+	position: absolute;
+	top: -50px;
+	right: 5px;
+	background: url(../images/dialpad/dialpad-backspace.png) top center no-repeat;
+	width: 58px;
+	height: 50px;
+	z-index: 6;
+}
+
+.backspace:active {
+	background-position: bottom center;
+}
+
+.lookup {
+	position: absolute;
+	top: -46px;
+	right: 12px;
+	width: 48px;
+	height: 40px;
+	z-index: 6;
+	background: url(../images/dialpad/address-book.png) top center no-repeat;		
+}
+
+.lookup:active {
+	background-position: 0 33.3%;
+}
+
+/* dial pad version of the glass */
+
+.keypad {
+	text-align: center;
+	color: white;
+	padding: 0;
+	width: 320px;
+	height: 322px;
+	margin: 52px 0 0 0;
+}
+
+
+div.keypad-row {
+	width: 320px;
+	max-height: 70px;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.keypad-row .key {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	float: left;
+}
+
+div.key.glassbutton {
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+
+.glassbutton {
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+
+.key.glassbutton.one,
+.key.glassbutton.three,
+.key.glassbutton.four,
+.key.glassbutton.six,
+.key.glassbutton.seven,
+.key.glassbutton.nine,
+.key.glassbutton.star,
+.key.glassbutton.pound {
+	width: 105px;
+	background-repeat: no-repeat;
+}
+
+.key.glassbutton.two,
+.key.glassbutton.five,
+.key.glassbutton.eight,
+.key.glassbutton.zero {
+	width: 109px;
+	background-repeat: no-repeat;
+}
+
+.key.glassbutton.one,
+.key.glassbutton.two,
+.key.glassbutton.three {
+	background: url(../images/dialpad/dialpad-row1dtmf.png);
+	background: url(../images/dialpad/dialpad-row2dtmf.png);
+	background: url(../images/dialpad/dialpad-row3dtmf.png);
+	background: url(../images/dialpad/dialpad-row4dtmf.png);						
+	background: url(../images/dialpad/dialpad-row1.png);
+	height: 64px;
+}
+
+
+.key.glassbutton.four,
+.key.glassbutton.five,
+.key.glassbutton.six {
+	height: 62px;
+	background: url(../images/dialpad/dialpad-row2.png)
+}
+
+.key.glassbutton.seven,
+.key.glassbutton.eight,
+.key.glassbutton.nine {
+	height: 62px;
+	background: url(../images/dialpad/dialpad-row3.png);
+}
+
+.key.glassbutton.star,
+.key.glassbutton.zero,
+.key.glassbutton.pound {
+	height: 62px;
+	background: url(../images/dialpad/dialpad-row4.png);
+}
+
+.glass-panel.dtmfpad .key.glassbutton {
+	height: 57px;
+}
+
+.glass-panel.dtmfpad .key.glassbutton.one,
+.glass-panel.dtmfpad .key.glassbutton.two,
+.glass-panel.dtmfpad .key.glassbutton.three {
+	background: url(../images/dialpad/dialpad-row1dtmf.png);
+}
+
+.glass-panel.dtmfpad .key.glassbutton.four,
+.glass-panel.dtmfpad .key.glassbutton.five,
+.glass-panel.dtmfpad .key.glassbutton.six {
+	background: url(../images/dialpad/dialpad-row2dtmf.png);
+}
+
+.glass-panel.dtmfpad .key.glassbutton.seven,
+.glass-panel.dtmfpad .key.glassbutton.eight,
+.glass-panel.dtmfpad .key.glassbutton.nine {
+	background: url(../images/dialpad/dialpad-row3dtmf.png);
+}
+
+.glass-panel.dtmfpad .key.glassbutton.star,
+.glass-panel.dtmfpad .key.glassbutton.zero,
+.glass-panel.dtmfpad .key.glassbutton.pound {
+	background: url(../images/dialpad/dialpad-row4dtmf.png);
+}
+
+
+.key.glassbutton.one,
+.glass-panel.dtmfpad .key.glassbutton.one 			{ background-position: top left; }
+.key.glassbutton.one:active,
+.glass-panel.dtmfpad .key.glassbutton.one:active 	{ background-position: bottom left; }
+
+.key.glassbutton.two,
+.glass-panel.dtmfpad .key.glassbutton.two 			{ background-position: top 215px; }
+.key.glassbutton.two:active,
+.glass-panel.dtmfpad .key.glassbutton.two:active    { background-position: bottom 215px; }
+
+.key.glassbutton.three,
+.glass-panel.dtmfpad .key.glassbutton.three 	    { background-position: top 106px; }
+.key.glassbutton.three:active,
+.glass-panel.dtmfpad .key.glassbutton.three:active  { background-position: bottom 106px; }
+
+.key.glassbutton.four,
+.glass-panel.dtmfpad .key.glassbutton.four 			{ background-position: top left; }
+.key.glassbutton.four:active,
+.glass-panel.dtmfpad .key.glassbutton.four:active  	{ background-position: bottom left; }
+
+.key.glassbutton.five,
+.glass-panel.dtmfpad .key.glassbutton.five 			{ background-position: top 215px; }
+.key.glassbutton.five:active,
+.glass-panel.dtmfpad .key.glassbutton.five:active 	{ background-position: bottom 215px; }
+
+.key.glassbutton.six,
+.glass-panel.dtmfpad .key.glassbutton.six 			{ background-position: top 106px; }
+.key.glassbutton.six:active,
+.glass-panel.dtmfpad .key.glassbutton.six:active 	{ background-position: bottom 106px; }
+
+.key.glassbutton.seven,
+.glass-panel.dtmfpad .key.glassbutton.seven 			{ background-position: top left; }
+.key.glassbutton.seven:active,
+.glass-panel.dtmfpad .key.glassbutton.seven:active 	{ background-position: bottom left; }
+
+.key.glassbutton.eight,
+.glass-panel.dtmfpad .key.glassbutton.eight 			{ background-position: top 215px; }
+.key.glassbutton.eight:active,
+.glass-panel.dtmfpad .key.glassbutton.eight:active 	{ background-position: bottom 215px; }
+
+.key.glassbutton.nine,
+.glass-panel.dtmfpad .key.glassbutton.nine 			{ background-position: top 106px; }
+.key.glassbutton.nine:active,
+.glass-panel.dtmfpad .key.glassbutton.nine:active 	{ background-position: bottom 106px; }
+
+.key.glassbutton.star,
+.glass-panel.dtmfpad .key.glassbutton.star 			{ background-position: top left; }
+.key.glassbutton.star:active,
+.glass-panel.dtmfpad .key.glassbutton.star:active 	{ background-position: bottom left; }
+
+.key.glassbutton.zero,
+.glass-panel.dtmfpad .key.glassbutton.zero 			{ background-position: top 215px; }
+.key.glassbutton.zero:active,
+.glass-panel.dtmfpad .key.glassbutton.zero:active	{ background-position: bottom 215px; }
+
+.key.glassbutton.pound,
+.glass-panel.dtmfpad .key.glassbutton.pound			{ background-position: top 106px; }
+.key.glassbutton.pound:active,
+.glass-panel.dtmfpad .key.glassbutton.pound:active	{ background-position: bottom 106px; }
+
+.dial-button {
+	margin: 0;
+	padding: 0;
+	width: 320px;
+	height: 66px; 
+	clear: both;
+	background: url(../images/dialpad/dial-button.png) top center no-repeat;
+}
+
+.dial-button:active {
+	background: url(../images/dialpad/dial-button.png) bottom center no-repeat;
+}
+
+.dial-button.disabled,
+.dial-button.disabled:active {
+	background: url(../images/dialpad/dial-button.png) center center no-repeat;
+}
+
+.disconnect-button,
+.empty-button {
+    margin: 0;
+	padding: 0;
+	width: 320px;
+	height: 66px;
+	clear: both;
+	background: url(../images/dialpad/disconnect-button.png) top center no-repeat;
+}
+
+.empty-button {
+	text-align: center;
+	color: #FFF;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 64px;
+	background: url(../images/dialpad/empty-button.png) top center no-repeat;
+}
+
+.disconnect-button:active {
+	background: url(../images/dialpad/disconnect-button.png) bottom center no-repeat;
+}
+
+.empty-button:active {
+	color: #222;  
+	background: url(../images/dialpad/empty-button.png) bottom center no-repeat;
+}
+
+.disconnect-button.disabled,
+.disconnect-button.disabled:active {
+	background: url(../images/dialpad/disconnect-button.png) center center no-repeat;
+}
+
+.empty-button.disabled,
+.empty-button.disabled:active {
+	background: url(../images/dialpad/empty-button.png) center center no-repeat;
+}
+
+
+/* dtmf pad specifics */
+
+.glass-panel.dtmfpad .input-field {
+	height: 26px;
+	top: -26px;
+}
+
+.glass-panel.dtmfpad .input-field .text-input {
+	height: 26px;
+	font-size: 24px;
+	line-height: 26px;
+	width: 300px;
+	padding: 0 10px;
+}
+
+.glass-panel.dtmfpad .input-field {
+	height: 29px;
+}
+
+.glass-panel.dtmfpad div.keypad {
+	margin: 0;
+	height: 292px;
+}
+
+.activecall-name {
+	background: url(../images/dialpad/dialpad-dtmf-top.png);
+	padding: 0 10px;
+	height: 32px;
+	margin-top: 28px;
+	text-align: center;
+	color: #fff;
+	line-height: 35px;
+	font-size: 16px;
+}
+.text-hidden {
+	font-size:0px; 
+	opacity: 0;
+}

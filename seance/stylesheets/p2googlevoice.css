@@ -1,0 +1,98 @@
+.P2Button {
+	width: 240px;
+}
+
+.P2JText {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: justify;
+}
+
+.P2LText {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: left;
+}
+
+.P2CText {
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+	color: #000;
+}
+
+.P2TableText {
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: left;
+}
+
+.P2TableText {
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	font-size: 14pt;
+	font-weight: normal;
+	text-align: left;
+}
+
+.listItem {
+	background: url(../images/info.png) no-repeat 50% right;
+}
+
+.P2ChangeLogText {
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	font-size: 12pt;
+	font-weight: normal;
+	text-align: left;
+	display: block;
+}
+
+h1 {
+	padding-top: 0px;
+	padding-left: 2px;
+	padding-bottom: 0px;
+	padding-right: 2px;
+	font-size: 30pt;
+	font-weight: bold;
+	text-align: center;
+	display: inline;
+}
+
+h2 {
+	padding-top: 0px;
+	padding-left: 2px;
+	padding-bottom: 0px;
+	padding-right: 2px;
+	font-size: 20pt;
+	font-weight: bold;
+	text-align: center;
+	display: inline;
+}
+
+.img_icon {
+	position:absolute;
+	left:10px;
+	top:5px;
+	width:32px; 
+	height:32px;
+	background: url(../images/icon32.png) no-repeat center;
+	padding: 10px 0px 0px 5px;
+	float:left;	
+}

@@ -1,0 +1,12 @@
+{
+	"icon":					"icon.png",
+	"id":					"com.p2labs.p2googlevoice",
+	"main":					"index.html",
+	"noDeprecatedStyles":	false,
+	"theme":				"light",
+	"title":				"P2GoogleVoice",
+	"type":					"native",
+	"vendor":				"P2Labs",
+	"vendorurl":			"http://P2Labs.com",
+	"version":				"1.0.3",
+}

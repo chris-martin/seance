@@ -1,0 +1,77 @@
+[
+    {
+    	"source": "app\/assistants\/stage-assistant.js"
+    },
+    {
+        "source": "app\/assistants\/main-assistant.js",
+        "scenes": "main",
+    },
+    {
+        "source": "app\/assistants\/preferences-assistant.js",
+        "scenes": "preferences",
+    },
+    {
+        "source": "app\/assistants\/dial-assistant.js",
+        "scenes": "dial",
+    },
+    {
+        "source": "app\/assistants\/about-assistant.js",
+        "scenes": "about",
+    },
+    {
+        "source": "app\/assistants\/disclaimer-assistant.js",
+        "scenes": "disclaimer",
+    },
+    {
+        "source": "app\/assistants\/help-assistant.js",
+        "scenes": "help",
+    },
+    {
+        "source": "app\/assistants\/sms-assistant.js",
+        "scenes": "sms",
+    },
+    {
+        "source": "app\/assistants\/helpcenter-assistant.js",
+        "scenes": "helpcenter",
+    },
+    {
+        "source": "app\/assistants\/helpdial-assistant.js",
+        "scenes": "helpdial",
+    },
+    {
+        "source": "app\/assistants\/helpchoose-assistant.js",
+        "scenes": "helpchoose",
+    },
+    {
+        "source": "app\/assistants\/helpsms-assistant.js",
+        "scenes": "helpsms",
+    },
+    {
+        "source": "app\/assistants\/helpprefs-assistant.js",
+        "scenes": "helpprefs",
+    },
+    {
+        "source": "app\/assistants\/helpobtain-assistant.js",
+        "scenes": "helpobtain",
+    },
+    {
+        "source": "app\/assistants\/helpChangeLog-assistant.js",
+        "scenes": "helpChangeLog",
+    },
+    {
+        "source": "app\/assistants\/error-assistant.js",
+        "scenes": "error",
+    },
+    {
+        "source": "app\/assistants\/dialpad-assistant.js",
+        "scenes": "dialpad",
+    },
+    {
+        "source": "app\/assistants\/history-assistant.js",
+        "scenes": "history",
+    },
+    {
+        "source": "app\/assistants\/helpHistory-assistant.js",
+        "scenes": "helpHistory",
+    },
+]
