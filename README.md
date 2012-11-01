@@ -14,6 +14,8 @@ What it is not
 This is not a VoIP client. Phone service is required, and calls will
 use your airtime minutes.
 
+This project has no association with Google.
+
 History
 =======
 
